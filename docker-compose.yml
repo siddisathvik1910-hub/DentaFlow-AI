@@ -1,0 +1,15 @@
+# NOTE: not run during development of this package. Put a TLS-terminating proxy (Caddy / Nginx / Cloudflare) in front.
+services:
+  dentaflow:
+    build: .
+    ports: ["3000:3000"]
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      TRUST_PROXY: "true"
+      DATA_DIR: /data
+    volumes:
+      - dentaflow-data:/data
+    restart: unless-stopped
+volumes:
+  dentaflow-data:

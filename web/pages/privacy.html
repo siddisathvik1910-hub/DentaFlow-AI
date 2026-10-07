@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head}}
+</head>
+<body>
+{{> header}}
+<main id="main" class="legal-page">
+<div class="wrap">
+<h1>Privacy Policy</h1>
+<p><strong>Last updated:</strong> {{updated}}</p>
+{{legal_notice}}
+<p>This policy explains how {{company_name}} ("DentaFlow AI", "we", "us") handles personal information when you visit our website, use our dashboard, or interact with an AI assistant that we operate on behalf of a dental practice.</p>
+
+<h2>1. Who is responsible for your information</h2>
+<p>We play two different roles, and the rules differ:</p>
+<ul>
+<li><strong>Website visitors and customers (our own data).</strong> For information about people who visit this site, request a demo, or hold a dashboard account, {{company_name}} is the controller (the "business").</li>
+<li><strong>Patients and callers of a dental practice.</strong> When a patient calls, texts or chats with a practice's DentaFlow AI assistant, the dental practice decides why and how that information is used, and we process it on the practice's behalf as its service provider (and, where the U.S. HIPAA rules apply, as its business associate under a written agreement). If you are a patient, please contact your dental practice first about your information.</li>
+</ul>
+
+<h2>2. Information we collect</h2>
+<table>
+<thead><tr><th>Category</th><th>Examples</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Contact and enquiry details</td><td>Name, work email, practice name, phone, message</td><td>You, via the demo form</td></tr>
+<tr><td>Account details</td><td>Name, email, role, hashed password, sign-in history</td><td>You or your practice administrator</td></tr>
+<tr><td>Patient and caller information (processed for practices)</td><td>Name, phone number, date of birth, appointment details, insurance carrier, call or chat transcripts and recordings, reason for visit</td><td>Callers and patients; the practice's scheduling system</td></tr>
+<tr><td>Usage and device data</td><td>Pages viewed, referring site, device type (only with your consent)</td><td>Your browser</td></tr>
+<tr><td>Technical and security data</td><td>Log entries, IP-derived rate-limit counters, audit logs</td><td>Our systems</td></tr>
+</tbody>
+</table>
+<p>We do not knowingly collect information from children under 13 through this website. Patient records for minors are provided by parents or guardians through the dental practice.</p>
+
+<h2>3. How we use information</h2>
+<ul>
+<li>To respond to demo requests and provide, secure and improve our service.</li>
+<li>To answer calls and messages, book, change and cancel appointments, send reminders and route emergencies on behalf of a practice.</li>
+<li>To keep the service safe: preventing spam, abuse and fraud, and keeping audit trails.</li>
+<li>To measure how our website is used, but only if you accept analytics cookies or similar technologies.</li>
+<li>To comply with legal obligations.</li>
+</ul>
+<p>We do not sell personal information. We do not use patient information to advertise to patients. We do not use practice patient data to train AI models unless the practice has agreed in writing and the data has been de-identified.</p>
+
+<h2>4. Legal bases (EEA / UK visitors)</h2>
+<p>Where GDPR applies we rely on: your consent (analytics, optional marketing); our legitimate interests (running and securing the service, responding to enquiries); performance of a contract (providing the service to our customers); and legal obligations.</p>
+
+<h2>5. Who we share information with</h2>
+<p>We share information only with service providers that help us run the service, under contracts that limit their use of it: cloud hosting and storage; telephony and SMS carriers; speech and AI model providers used to understand and answer callers; payment processing; and error monitoring. Where required, these providers sign agreements appropriate to the data they handle (for example, business associate agreements for patient information). We may also disclose information when required by law or to protect rights and safety, and in connection with a merger or sale of the business.</p>
+
+<h2>6. AI assistants and recordings</h2>
+<p>Our assistants tell callers they are automated. Calls may be recorded and transcribed where the practice enables it, and the assistant announces recording where required. Assistants do not give medical advice. Callers can ask for a person at any time.</p>
+
+<h2>7. Cookies and similar technologies</h2>
+<p>We use a small amount of essential storage to run the site and, only with your consent, analytics. See our <a href="/cookies">Cookie Statement</a>. You can change your choice at any time using "Cookie settings" in the page footer.</p>
+
+<h2>8. How long we keep information</h2>
+<ul>
+<li>Demo requests: up to 24 months, or until you ask us to delete them.</li>
+<li>Account data: while the account is active and for a limited period afterwards.</li>
+<li>Patient and call data: for the period the practice configures (default suggestions: call audio 30 to 90 days, transcripts up to 24 months, audit logs 6 years), then deleted or de-identified.</li>
+<li>Website analytics: aggregated and not linked to you.</li>
+</ul>
+
+<h2>9. Security</h2>
+<p>We use encryption in transit and at rest, field-level encryption for sensitive identifiers, role-based access, multi-factor authentication for staff, audit logging, rate limiting, and secure development practices. No system is perfectly secure. If a breach affects your information, we will notify the affected practice or you as required by law.</p>
+
+<h2>10. Your rights and choices</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete or export your information, to object to or restrict certain uses, to withdraw consent, and to complain to your data protection authority. California residents have rights under the CCPA/CPRA, including the right to know, delete and correct, and to opt out of sale or sharing (we do neither). To exercise a right regarding our own data, email <a href="mailto:{{company_email}}">{{company_email}}</a>. For patient data, please contact your dental practice, and we will assist them in responding.</p>
+
+<h2>11. International transfers</h2>
+<p>Information may be processed in countries other than where you live, including the United States. Where required, we use appropriate safeguards such as standard contractual clauses.</p>
+
+<h2>12. Changes</h2>
+<p>We may update this policy and will post the new date above. For material changes we will give additional notice where appropriate.</p>
+
+<h2>13. Contact</h2>
+<p>{{company_name}}<br>{{company_address}}<br>Email: <a href="mailto:{{company_email}}">{{company_email}}</a></p>
+</div>
+</main>
+{{> footer}}
+{{> cookie-banner}}
+{{> scripts}}
+</body>
+</html>

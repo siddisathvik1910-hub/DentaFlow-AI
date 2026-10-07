@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head}}
+</head>
+<body>
+{{> header}}
+<main id="main" class="legal-page">
+<div class="wrap">
+<h1>Cookie Statement</h1>
+<p><strong>Last updated:</strong> {{updated}}</p>
+{{legal_notice}}
+<p>This statement explains which cookies and similar technologies (such as browser local storage) the DentaFlow AI website uses, why, and how you can control them. It supplements our <a href="/privacy">Privacy Policy</a>.</p>
+<p><button type="button" class="btn btn-sm" data-cookie-settings>Open cookie settings</button></p>
+
+<h2>Essential (always on)</h2>
+<p>These are needed for the site to work and do not track you across other sites.</p>
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Purpose</th><th>Duration</th></tr></thead>
+<tbody>
+<tr><td><code>df_consent</code></td><td>Local storage</td><td>Remembers your cookie choice so we do not ask on every page.</td><td>12 months</td></tr>
+<tr><td><code>df_session</code></td><td>Cookie (HttpOnly)</td><td>Keeps staff signed in to the dashboard. Only set after you sign in.</td><td>Up to 12 hours</td></tr>
+<tr><td><code>df_chat</code></td><td>Session storage</td><td>Keeps a chat with the demo assistant together while the tab is open. Only used if you open the chat.</td><td>Until the tab closes</td></tr>
+</tbody>
+</table>
+
+<h2>Analytics (only if you accept)</h2>
+<p>If you choose "Accept analytics", we record anonymous page views to understand which content is useful. This is only active after you consent.</p>
+<table>
+<thead><tr><th>Name</th><th>Type</th><th>Purpose</th><th>Duration</th></tr></thead>
+<tbody>
+<tr><td><code>df_sid</code></td><td>Session storage</td><td>Random ID that groups page views from one visit in our own first-party analytics. It contains no personal data.</td><td>Until the tab closes</td></tr>
+<tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Cookies (Google Analytics)</td><td>Only if the site operator has enabled Google Analytics 4. Distinguishes visits and measures traffic.</td><td>Up to 13 months</td></tr>
+</tbody>
+</table>
+<p>We do not use advertising or retargeting cookies.</p>
+
+<h2>Managing your choices</h2>
+<ul>
+<li>Use the "Cookie settings" button above or in the footer to accept or withdraw analytics at any time.</li>
+<li>Withdrawing consent stops analytics going forward and removes our analytics identifiers from your browser.</li>
+<li>You can also block or delete cookies in your browser settings. Essential features such as dashboard sign-in will not work without the session cookie.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Questions? Email <a href="mailto:{{company_email}}">{{company_email}}</a>.</p>
+</div>
+</main>
+{{> footer}}
+{{> cookie-banner}}
+{{> scripts}}
+</body>
+</html>

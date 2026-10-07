@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+{{> head}}
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body class="app-body">
+<a class="skip" href="#view">Skip to main content</a>
+<div class="app" id="app">
+  <header class="topbar">
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+    <a class="brand" href="#/today" aria-label="DentaFlow AI dashboard"><img src="/img/logo.svg" width="32" height="32" alt="">DentaFlow AI</a>
+    <div class="topbar-right">
+      <span class="pill" id="engine-pill" title="Which AI engine answers conversations"></span>
+      <span class="pill" id="live-pill" hidden>Live</span>
+      <button class="btn btn-sm btn-ghost" id="logout-btn" type="button">Sign out</button>
+    </div>
+  </header>
+  <nav class="sidebar" id="sidebar" aria-label="Dashboard">
+    <ul id="nav-list"></ul>
+  </nav>
+  <main class="view" id="view" tabindex="-1"><p class="muted">Loading…</p></main>
+</div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<dialog id="dlg" aria-labelledby="dlg-title"></dialog>
+<script src="/js/app.js" defer></script>
+<script src="/js/app2.js" defer></script>
+</body>
+</html>
